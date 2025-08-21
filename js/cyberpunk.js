@@ -1,3 +1,5 @@
+/* @jsx h */
+/* @jsxFrag preact.Fragment */
 
 const { h, render } = preact;
 const { useState, useEffect, useRef } = preactHooks;
