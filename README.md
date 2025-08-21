@@ -57,7 +57,7 @@ Keep in mind, the project is still at the beginning, so I haven't even set the p
 
 &gt;get happy feelings
 
-### ~2 days later~
+### 2 days later
 
 &gt;weekend passes, it's Monday, I'm back at work
 
@@ -81,7 +81,7 @@ Keep in mind, the project is still at the beginning, so I haven't even set the p
 
 &gt;end of day arrives, pack my stuffs and skidoodle home
 
-### ~1 day later~
+### 1 day later
 
 &gt;get to work somewhat happy
 
@@ -93,7 +93,7 @@ Keep in mind, the project is still at the beginning, so I haven't even set the p
 
 &gt;power through again
 
-### ~1 day later~
+### 1 day later
 
 &gt;back at work
 
@@ -115,7 +115,7 @@ Keep in mind, the project is still at the beginning, so I haven't even set the p
 
 &gt;start writing bullsht in the README
 
-### ~Present time~
+### Present time
 
 So now I'm here. Lil coding beginner making you a fun lil game. I'm especially proud of the cyberpunk page, but I SINCERELY wouldn't want to do that again. So tangled. So yucky. But the page looks pretty ✨chic✨
 
