@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fallout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Authentification</title>
+</head>
+
+<body>
+
+    <div id="ignore"></div>
+    <div class="computer-frame">
+        <div class="inner-computer-frame">
+            <div class="black-computer-framing">
+                <div class="title-screen"></div>
+                <div class="hacking-screen"></div>
+                <div class="input-screen"></div>
+                <div class="lower-input-screen"></div>
+            </div>
+            <div class="black-computer-framing-before">
+                <h3 class="text-center">Choose Difficulty</h3>
+                <ul>
+                    <li>Very Easy</li>
+                    <li>Easy</li>
+                    <li>Average</li>
+                    <li id="lfmid">Hard</li>
+                    <li id="mid">Very Hard</li>
+                </ul>
+                <div id="help">
+                    <i class="fa fa-question-circle-o fa-4x" aria-hidden="true"></i>
+                </div>
+                <div id="settings">
+                    <i class="fa fa-cogs fa-4x" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="help-screen">
+                <h2 class="text-center">Help</h2>
+                <p class="text-center">
+                    The goal of the game is to determine the correct password given gibberish.<br>Within the gibberish,
+                    there is a single correct word.<br> If you choose the incorrect password, your tries go down by one,
+                    and if your tries run out, the terminal becomes locked.<br>Whenever you choose an incorrect word,
+                    the system will return how many placement of characters are correct.<br>To help, there are duds in
+                    the gibberish that will either remove incorrect words or replenish your tries.<br> Duds are enclosed
+                    special characters such as <br>() , &lt;&gt; , {} , [].<br> There could also be characters contained
+                    in the dud as well.<br> Good Luck!
+                </p>
+                <div id="back">
+                    <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+                    <p>Back</p>
+                </div>
+            </div>
+            <div class="settings-screen">
+                <h2 class="text-center">Settings</h2>
+                <div id="inputs">
+                    <p>Words: </p><input type="text" name="words" id="wd">
+                    <p>Duds: </p><input type="text" name="duds" id="dd">
+                    <p>Tries: </p><input type="text" name="tries" id="tr">
+                    <p style="margin-top: 20px;">Note: if nothing is inputted, defaults are used.</p>
+                </div>
+                <button class="btn" id="confirm">Confirm</button>
+            </div>
+            <div class="win-screen">
+                <h2 class="text-center">ACCESS GRANTED</h2>
+                <div id="win-quote"></div>
+            </div>
+            <div class="failed-screen">
+                <h3 class="text-center">TERMINAL LOCKED</h3>
+                <h3 class="text-center">PLEASE CONTACT AN ADMINISTRATOR</h3>
+            </div>
+            <div class="black-screen"></div>
+        </div>
+    </div>
+    <button id="turn" class="btn"></button>
+
+<!-- Audio 
+
+    <div id="audiostuff">
+        <audio id="pb" src="http://mitchellthompson.net/demos/terminal/sound/passbad.ogg"></audio>
+        <audio id="pg" src="http://mitchellthompson.net/demos/terminal/sound/passgood.ogg"></audio>
+        <audio id="pof" src="http://mitchellthompson.net/demos/terminal/sound/poweroff.ogg"></audio>
+        <audio id="po" src="http://mitchellthompson.net/demos/terminal/sound/poweron.ogg"></audio>
+        <audio id="k1" src="http://mitchellthompson.net/demos/terminal/sound/k1.ogg"></audio>
+        <audio id="k2" src="http://mitchellthompson.net/demos/terminal/sound/k2.ogg"></audio>
+        <audio id="k3" src="http://mitchellthompson.net/demos/terminal/sound/k3.ogg"></audio>
+        <audio id="k4" src="http://mitchellthompson.net/demos/terminal/sound/k4.ogg"></audio>
+        <audio id="k5" src="http://mitchellthompson.net/demos/terminal/sound/k5.ogg"></audio>
+        <audio id="k6" src="http://mitchellthompson.net/demos/terminal/sound/k6.ogg"></audio>
+        <audio id="k7" src="http://mitchellthompson.net/demos/terminal/sound/k7.ogg"></audio>
+        <audio id="k8" src="http://mitchellthompson.net/demos/terminal/sound/k8.ogg"></audio>
+        <audio id="k9" src="http://mitchellthompson.net/demos/terminal/sound/k9.ogg"></audio>
+        <audio id="k10" src="http://mitchellthompson.net/demos/terminal/sound/k10.ogg"></audio>
+        <audio id="k11" src="http://mitchellthompson.net/demos/terminal/sound/k11.ogg"></audio>
+    </div>
+
+-->
+
+    <script src="js/fallout.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container on">
+        <div class="screen">
+            <h3 class="title">
+                CONNECTION ESTABLISHED
+            </h3>
+            <div class="box--outer">
+                <div class="box">
+                    <div class="box--inner">
+                        <div class="content">
+                            <div class="holder">
+                                <b>Welcome, darling</b> — please enter your VIP user credentials
+                                to gain access. Failure to provide the correct credentials will be treated
+                                as a denial of service attack.
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col col__left label">
+                                        Login
+                                    </div>
+                                    <div class="col col__center">
+                                        <input type="text" id="login" maxlength="32" value="Admin_1" readonly>
+                                    </div>
+                                </div>
+                                <form onsubmit="validateLogin(event)">
+                                    <div class="row">
+                                        <div class="col col__left label">
+                                            Password
+                                        </div>
+                                        <div class="col col__center">
+                                            <input type="password" id="password" name="password" required="required"
+                                                placeholder="" data-error="" maxlength="32" autocomplete="new-password"
+                                                autofocus="true" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <button type="submit" id="submit" name="submit">[login]</button>
+                                    </div>
+                                </form>
+                                <b class="flash" id="accessMessage"></b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

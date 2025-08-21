@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url('https://fonts.googleapis.com/css?family=Asap');
+@keyframes blinker {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h4 {
+  color: black;
+}
+
+.computer-frame {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 510px;
+  width: 700px;
+  background-color: #737373;
+  border-radius: 20px;
+  border: 3px outset #E6E6E6;
+}
+.computer-frame .fa-wifi {
+  position: absolute;
+  top: 445px;
+  left: 50px;
+}
+.computer-frame .fa-stack {
+  position: absolute;
+  top: 440px;
+  left: 85px;
+  font-size: 10px;
+}
+
+.inner-computer-frame {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 400px;
+  width: 600px;
+  border-radius: 20px;
+  background-color: #595959;
+  border: 5px inset #737373;
+}
+
+.black-computer-framing, .black-computer-framing-before {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 390px;
+  width: 590px;
+  border-radius: 20px;
+  background-color: #0D0D0D;
+  border: 5px inset #595959;
+}
+
+.black-computer-framing {
+  display: none;
+}
+
+.title-screen {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 370px;
+  width: 570px;
+}
+
+.hacking-screen {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 220px;
+  top: 60px;
+  height: 300px;
+  width: 360px;
+}
+
+.input-screen, .lower-input-screen {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  top: 45px;
+  left: 350px;
+  height: 270px;
+  width: 220px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: baseline;
+  align-content: flex-end;
+}
+
+.lower-input-screen {
+  top: 338px;
+  height: 20px;
+}
+
+p, h3, ul, u, #Width {
+  color: #00FF00;
+  margin: 0;
+}
+p #mid, h3 #mid, ul #mid, u #mid, #Width #mid {
+  margin-left: 180px;
+}
+
+ul {
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 50px;
+  margin-right: 40px;
+  padding: 8px;
+  border: 1px solid #00FF00;
+  cursor: pointer;
+}
+
+#Width {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  background-color: grey;
+}
+
+#ignore {
+  visibility: hidden;
+  background-color: grey;
+}
+
+#letter, #word, #dud, #Letter {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+}
+#letter:hover, #word:hover, #dud:hover, #Letter:hover {
+  background-color: #00FF00;
+  color: #0D0D0D;
+}
+
+#row {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+}
+
+.win-screen, .failed-screen {
+  display: none;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 390px;
+  width: 590px;
+  border-radius: 20px;
+  background-color: #0D0D0D;
+}
+.win-screen h2, .failed-screen h2 {
+  color: #00FF00;
+  margin: 0;
+  padding-top: 30px;
+}
+.win-screen h3, .failed-screen h3 {
+  color: #00FF00;
+  margin: 0;
+  padding-top: 50px;
+}
+
+#win-quote {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  font-size: 15px;
+  color: #00FF00;
+  height: 200px;
+  width: 500px;
+}
+
+#dead-word, #dead-dud {
+  cursor: pointer;
+}
+#dead-word:hover, #dead-dud:hover {
+  background-color: #00FF00;
+  color: #0D0D0D;
+}
+
+#help {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  top: 250px;
+  right: 450px;
+  height: 40px;
+  width: 40px;
+}
+#help .fa-question-circle-o {
+  color: #00EE00;
+  cursor: pointer;
+}
+
+.help-screen {
+  display: none;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 390px;
+  width: 590px;
+  border-radius: 20px;
+  background-color: #0D0D0D;
+}
+.help-screen p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.help-screen h2 {
+  color: #00FF00;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.help-screen #back {
+  cursor: pointer;
+  top: 20px;
+  margin-left: 20px;
+  border: 1px solid #00FF00;
+  width: 110px;
+  height: auto;
+}
+.help-screen #back i, .help-screen #back p {
+  font-size: 20px;
+  color: #00FF00;
+  margin: 3px;
+  display: inline-block;
+}
+
+#settings {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  top: 250px;
+  left: 420px;
+  height: 40px;
+  width: 40px;
+}
+#settings .fa-cogs {
+  color: #00EE00;
+  cursor: pointer;
+}
+
+.settings-screen {
+  display: none;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 390px;
+  width: 590px;
+  border-radius: 20px;
+  background-color: #0D0D0D;
+}
+.settings-screen h2 {
+  margin: 0;
+  color: #00FF00;
+}
+.settings-screen input {
+  display: block;
+  color: #00FF00;
+  background-color: #0D0D0D;
+  border-color: #00FF00;
+  margin-left: 10px;
+}
+.settings-screen button {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 80px;
+  color: #000000;
+  background-color: #00DD00;
+  height: 40px;
+  width: 100px;
+}
+.settings-screen p {
+  margin-left: 10px;
+}
+
+#turn {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  top: 450px;
+  left: 320px;
+  width: 80px;
+  height: 50px;
+  background-color: #C20000;
+  border-width: 2px;
+  border-color: #860101;
+  border-style: outset;
+}
+#turn:active {
+  border-width: 2px;
+  border-color: #B20101;
+  border-style: inset;
+}
+
+.black-screen {
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 390px;
+  width: 590px;
+  border-radius: 20px;
+  background-color: #0D0D0D;
+}
+
+.black-computer-framing-before {
+  display: none;
+}
+
+code {
+  position: absolute;
+  color: black;
+  bottom: 0;
+  right: 0;
+}
