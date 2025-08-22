@@ -8,13 +8,13 @@ function validateLogin(event) {
     const passwordInput = (inputEl.value || "").trim();
   
     if (passwordInput === 'Corina') {
-      messageEl.innerText = "Access Granted!";
+      messageEl.innerText = "Access Granted sweetiepie!";
       window.location.href = "portal.html";
-    } else if (passwordInput === '2002') {
-      messageEl.innerText = "Access Granted!";
-      window.location.href = "nier.html";
     } else if (passwordInput === 'IDENTITY') {
       messageEl.innerText = "Generating Identity...";
+      window.location.href = "nier.html";
+    } else if (passwordInput === '2002') {
+      messageEl.innerText = "Hop right in.";
       window.location.href = "cyberpunk.html";
     } else if (passwordInput === 'Corinne') {
       messageEl.innerText = "You Are A Monster!";
@@ -32,6 +32,10 @@ function validateLogin(event) {
       messageEl.innerText = "Grandpa";
     } else if (passwordInput === '') {
       messageEl.innerText = "Lazy bastard.";
+    } else if (passwordInput === 'identity') {
+      messageEl.innerText = "Use CAPS, dummy.";
+    } else if (passwordInput === 'Identity') {
+      messageEl.innerText = "All caps, buttmunch.";
     } else {
       messageEl.innerText = "Wrong Password.";
     }
